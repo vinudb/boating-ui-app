@@ -1,0 +1,283 @@
+.imgContainer{
+    line-height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: $white;
+    border: none;
+    border-bottom: 1px solid $pinkishGray;
+    @media (min-width: $desktop-breakpoint) {
+      width: 40%;
+      border: none;
+      border-right: 1px solid $pinkishGray;
+    }
+  }
+  
+  .img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  
+  .boatCard{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    @media (min-width: $desktop-breakpoint) {
+      flex-direction: row;
+    }
+  }
+  
+  .boatCardDetails{
+    background-color: #fff;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 242px;
+      
+  }
+  
+  /* MOBILE */
+@media only screen and (max-width: 600px) {
+    .boarCardList{
+      margin-right: 0;
+      float: none;
+    }
+  }
+
+  .titlePlace{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 15px;
+    @media (min-width: $desktop-breakpoint) {
+      border-bottom: 1px solid $pinkishGray;
+      width: 70%;
+    }
+  }
+  
+  .row1{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $desktop-breakpoint) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .row2{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .row3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (min-width: $desktop-breakpoint) {
+      flex-direction: row;
+    }
+  }
+  
+  .row3_1{
+    display: flex;
+    flex-direction: row;
+    @media (min-width: $desktop-breakpoint) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .boatAmenitiesContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+    @media (min-width: $desktop-breakpoint) {
+      width: 70%;
+      border-right: 1px solid $pinkishGray;
+    }
+  }
+  
+  .priceBookContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid $pinkishGray;
+    @media (min-width: $desktop-breakpoint) {
+      border: none;
+      flex-direction: column;
+      width: 30%;
+    }
+  }
+  
+  .topMargin{
+    margin-top: 10px;
+  }
+  
+  .viewsContainer{
+    display: flex;
+    flex-direction: row;
+    color: $paleRed;
+    font-size: small;
+    padding: 0 15px 15px 15px;
+    border-bottom: 1px solid $pinkishGray;
+    @media (min-width: $desktop-breakpoint) {
+      flex-direction: column;
+      border: 1px solid $pinkishGray;
+      width: 30%;
+      padding: 15px;
+      border-right: none;
+      border-top: none;
+    }
+  }
+   
+
+.title{
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    color: #094856;
+    text-transform: capitalize;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.year{
+    @extend .title;
+    font-weight: lighter;
+    display: inline;
+}
+
+.place{
+    @extend .title;
+    font-weight: lighter;
+    color: $gray;
+}
+
+.hot{
+    color: $white;
+    background-color: $paleRed;
+    padding: 0 3px;
+    font-weight: bold;
+    font-size: small;
+}
+
+.viewsCount{
+    font-weight: bold;
+}
+
+.row2Cols{
+    width: 25%;
+    border: 1px solid $pinkishGray;
+    border-top: none;
+    border-right: none;
+    padding: 15px 0;
+    @media (min-width: $desktop-breakpoint){
+        padding: 15px;    
+    }
+}
+
+.cabinLength{
+    border-left: none;
+}
+
+.row2Key{
+    @extend .title;
+    font-weight: lighter;
+    color: $pinkishGray;
+    font-size: small;
+}
+.row2Value{
+    @extend .title;
+}
+
+.priceContainer{
+    width: 50%;
+    padding: 20px;
+    border-right: 1px solid gray;
+    @media (min-width: $desktop-breakpoint) {
+        width: 100%;
+        border: none;
+    }
+}
+
+.bookContainer{
+    width: 50%;
+    padding: 20px;
+    @media (min-width: $desktop-breakpoint) {
+        width: 100%;
+        padding-top: 0;
+    }
+}
+
+.row3Key{
+    @extend .row2Key;
+}
+
+.row3Value{
+    @extend .row2Value;
+}
+
+.inclusivesText{
+    @extend .place;
+    display: inline;
+}
+
+.fa-check{
+    color: green;
+}
+
+.price{
+    @extend .title;
+    display: inline;
+    font-size: large;
+}
+
+.fa-euro{
+    @extend .price;
+    font-size: initial;
+}
+
+.subText{
+    @extend .title;
+    display: inline;
+    color: $gray;
+    font-size: small;
+}
+
+.star-ratings-sprite {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+    font-size: 0;
+    height: 21px;
+    line-height: 0;
+    overflow: hidden;
+    text-indent: -999em;
+    width: 110px;
+    margin: 0 auto;
+  }
+  
+  .star-ratings-sprite-rating {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+    background-position: 0 100%;
+    float: left;
+    height: 21px;
+    display:block;
+  }
+
+@media (min-width: $desktop-breakpoint)  {
+    .ratingsMobile{
+        display: none;
+    }
+}
+
+@media (max-width: $desktop-breakpoint)  {
+    .ratingsDesktop{
+        display: none;
+    }
+}

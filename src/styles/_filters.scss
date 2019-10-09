@@ -1,0 +1,20 @@
+.checkInOutContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkInOut{
+    width: 48%;
+}
+
+.filters{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    @media (min-width: 1025px) {
+        margin-right: 30px;
+        margin-left: 100px;
+      flex: 0 0 290px;
+      
+    }
+}

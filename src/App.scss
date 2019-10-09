@@ -1,0 +1,37 @@
+@import './styles/settings'; 
+@import './styles/standardComponents'; 
+@import './styles/filters';
+@import './styles/boatCardStyle';
+@import './styles/header';
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  background-color: #e8e8e8;
+  display: flex;
+    flex-direction: column;
+}
+
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  padding: 11px;
+  margin-top: 55px;
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    margin: 0;
+  }
+}
