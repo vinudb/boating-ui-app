@@ -6,7 +6,7 @@ class BoatCardsList extends React.Component {
     }
     componentDidMount() {
         //fetch boats here
-        const boats = fetch('http://localhost:3010/boatOptions')
+        const boats = fetch('https://fake-restful-api-v1.herokuapp.com/boatOptions')
             .then((res) => res.json())
             .then((result) => this.setState({ boats: result }))
             .catch((e) => { console.log(e) })
