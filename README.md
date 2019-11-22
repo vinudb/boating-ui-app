@@ -1,9 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-#This is frontend code challenge given by Zizoo
-
-# LIVE URL FOR THIS TASK IS https://zizoo-frontend-task.herokuapp.com/
-
 A list of boat options for the holiday are rendered in the dynamic boatcard component.
 
 To view the output in the development mode, follow the steps as given below:
